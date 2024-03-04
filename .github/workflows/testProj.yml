@@ -11,7 +11,9 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     - name: Deploy to Render
       uses: JorgeLNJunior/render-deploy@v1.4.3
       with:
