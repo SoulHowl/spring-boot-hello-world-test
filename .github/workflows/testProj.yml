@@ -13,6 +13,6 @@ jobs:
       with:
         fetch-depth: 0
     - name: Deploy to Render
-      uses: bounceapp/render-action@0.6.0
+      uses: bounceapp/render-action@0.8.0
       with:
         service-id: ${{ secrets.SERVICE_KEY }}
